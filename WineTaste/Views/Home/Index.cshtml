@@ -1,0 +1,27 @@
+@* @model System.Collections.Generic.IEnumerable<WineTaste.Entities.Category> *@
+@using WineTaste.Entities
+@model WineTaste.ViewModels.HomeViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Wine Tasste</title>
+</head>
+<body>
+<div>
+    @foreach (var category in Model.Categories)
+    {
+        <h2>@category.CategoryName</h2>
+        @foreach (var varietal in category.VarietalList)
+        {
+            <h3>@varietal</h3>
+        }
+    }
+</div>
+</body>
+</html>
