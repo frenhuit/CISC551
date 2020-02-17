@@ -2,17 +2,6 @@
 @using WineTaste.Entities
 @model WineTaste.ViewModels.HomeViewModel
 
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <title>Wine Tasste</title>
-</head>
-<body>
 <div>
     @foreach (var category in Model.Categories)
     {
@@ -23,5 +12,3 @@
         }
     }
 </div>
-</body>
-</html>

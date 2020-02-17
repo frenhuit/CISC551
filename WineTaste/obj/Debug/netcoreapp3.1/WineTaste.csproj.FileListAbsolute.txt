@@ -130,3 +130,5 @@ C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netc
 C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netcoreapp3.1\WineTaste.RazorTargetAssemblyInfo.cs
 C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netcoreapp3.1\WineTaste.Views.pdb
+C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs

@@ -35,16 +35,22 @@
         <e p="HomeViewModel.cs" t="Include" />
       </e>
       <e p="Views" t="Include">
+        <e p="_ViewStart.cshtml" t="Include" />
         <e p="Home" t="Include">
           <e p="Index.cshtml" t="Include" />
           <e p="Index.cshtml.cs" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="_Layout.cshtml" t="Include" />
         </e>
       </e>
       <e p="WineTaste.csproj" t="IncludeRecursive" />
       <e p="WineTaste.sln" t="IncludeFlat" />
       <e p="wwwroot" t="Include">
         <e p="css" t="Include" />
-        <e p="image" t="Include" />
+        <e p="image" t="Include">
+          <e p="home_header.jpg" t="Include" />
+        </e>
         <e p="lib" t="Include">
           <e p="bootstrap-4.3.1" t="Include">
             <e p="css" t="Include">
@@ -71,6 +77,9 @@
               <e p="bootstrap.min.js" t="Include" />
               <e p="bootstrap.min.js.map" t="Include" />
             </e>
+          </e>
+          <e p="jquery-3.4.1" t="Include">
+            <e p="jquery.min.js" t="Include" />
           </e>
         </e>
       </e>
