@@ -8,20 +8,17 @@ using WineTaste.ViewModels;
 
 namespace WineTaste.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : BaseController
     {
-        private ICategoryRepository _categoryRepository;
-
-        public HomeController(ICategoryRepository categoryRepository)
+        public HomeController(ICategoryRepository categoryRepository) : base(categoryRepository)
         {
-            _categoryRepository = categoryRepository;
         }
 
         public IActionResult Index()
         {
             HomeViewModel viewModel = new HomeViewModel()
             {
-                Categories = _categoryRepository.GetCategories().ToList()
+                Categories = baseViewModel.Categories
             };
             return View(viewModel);
         }

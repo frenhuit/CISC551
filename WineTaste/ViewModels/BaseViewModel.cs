@@ -3,7 +3,8 @@ using WineTaste.Entities;
 
 namespace WineTaste.ViewModels
 {
-    public class HomeViewModel : BaseViewModel
+    public class BaseViewModel
     {
+        public IEnumerable<Category> Categories { get; set; }
     }
 }
