@@ -9,6 +9,6 @@ namespace WineTaste.Entities
     {
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
-        public IEnumerable<string> VarietalList { get; set; }
+        public IEnumerable<Varietal> VarietalList { get; set; }
     }
 }

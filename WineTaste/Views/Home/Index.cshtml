@@ -2,13 +2,19 @@
 @using WineTaste.Entities
 @model WineTaste.ViewModels.HomeViewModel
 
-<div>
-    @foreach (var category in Model.Categories)
-    {
-        <h2>@category.CategoryName</h2>
-        @foreach (var varietal in category.VarietalList)
-        {
-            <h3>@varietal</h3>
-        }
-    }
+<div class="container">
+    <img src = "image/home_header.jpg" class = "img-fluid"/>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-4">
+            <img src = "image/Varietal_Cabernet_Sauvignon.jpg" class = "thumb-post"/>
+        </div>
+        <div class="col-4">
+            <img src = "image/191124_Tile4A.jpg" class = "thumb-post"/>
+        </div>
+        <div class="col-4">
+            <img src = "image/iStock_000007165584Small.jpg" class = "thumb-post"/>
+        </div>
+    </div>
 </div>

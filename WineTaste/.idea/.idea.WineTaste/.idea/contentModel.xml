@@ -13,6 +13,7 @@
       </e>
       <e p="Entities" t="Include">
         <e p="Category.cs" t="Include" />
+        <e p="Varietal.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
         <e p="ICategoryRepository.cs" t="Include" />
@@ -51,7 +52,16 @@
       <e p="wwwroot" t="Include">
         <e p="css" t="Include" />
         <e p="image" t="Include">
+          <e p="112580h.jpg" t="Include" />
+          <e p="191124_Tile4A.jpg" t="Include" />
+          <e p="aqtji6meozrrxnsgwhls.jpg" t="Include" />
           <e p="home_header.jpg" t="Include" />
+          <e p="iStock_000007165584Small.jpg" t="Include" />
+          <e p="lnsupadjgudeg6l6u8ef.jpg" t="Include" />
+          <e p="rjnqcoe4uvz2mgqe2vtu.jpg" t="Include" />
+          <e p="Tile5.jpg" t="Include" />
+          <e p="Varietal_Cabernet_Sauvignon.jpg" t="Include" />
+          <e p="znzhqgu4wioeec2l3j9e.jpg" t="Include" />
         </e>
         <e p="lib" t="Include" />
       </e>

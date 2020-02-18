@@ -30,23 +30,23 @@ namespace WineTaste.Models
 
         private void InitializeCategories()
         {
-            IEnumerable<String> redWines = new List<string>
+            IEnumerable<Varietal> redWines = new List<Varietal>
             {
-                "Cabernet Sauvignon",
-                "Bordeaux Blends",
-                "Pinot Noir",
+                new Varietal{VarietalId=1, VarietalName="Cabernet Sauvignon"},
+                new Varietal{VarietalId=2, VarietalName="Bordeaux Blends"},
+                new Varietal{VarietalId=3, VarietalName="Pinot Noir"},
             };
             
-            IEnumerable<String> whiteWines = new List<string>
+            IEnumerable<Varietal> whiteWines = new List<Varietal>
             {
-                "Chardonnay",
-                "Sauvignon Blanc",
-                "Riesling",
+                new Varietal{VarietalId=4, VarietalName="Chardonnay"},
+                new Varietal{VarietalId=5, VarietalName="Sauvignon Blanc"},
+                new Varietal{VarietalId=6, VarietalName="Riesling"},
             };
 
             _categories = new List<Category>
             {
-                new Category{CategoryId = 1, CategoryName = "Red Wine", VarietalList = redWines},
+                new Category{CategoryId = 1, CategoryName = "Red Wine", VarietalList = redWines },
                 new Category{CategoryId = 2, CategoryName = "White Wine", VarietalList = whiteWines},
             };
         }
