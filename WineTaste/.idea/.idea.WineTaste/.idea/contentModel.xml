@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\frenh\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\frenh\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\frenh\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WineTaste.1054945874.00" t="ExcludeRecursive" />
     <e p="C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste" t="IncludeRecursive">
@@ -10,6 +11,7 @@
       <e p="Controllers" t="Include">
         <e p="BaseController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
+        <e p="VarietalController.cs" t="Include" />
       </e>
       <e p="Entities" t="Include">
         <e p="Category.cs" t="Include" />
@@ -36,6 +38,7 @@
       <e p="ViewModels" t="Include">
         <e p="BaseViewModel.cs" t="Include" />
         <e p="HomeViewModel.cs" t="Include" />
+        <e p="VarietalViewModel.cs" t="Include" />
       </e>
       <e p="Views" t="Include">
         <e p="_ViewStart.cshtml" t="Include" />
@@ -45,6 +48,9 @@
         </e>
         <e p="Shared" t="Include">
           <e p="_Layout.cshtml" t="Include" />
+        </e>
+        <e p="Varietal" t="Include">
+          <e p="Index.cshtml" t="Include" />
         </e>
       </e>
       <e p="WineTaste.csproj" t="IncludeRecursive" />
