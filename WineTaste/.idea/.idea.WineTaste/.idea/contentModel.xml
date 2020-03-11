@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\frenh\.Rider2019.3\config\extensions" t="IncludeRecursive" />
     <e p="C:\Users\frenh\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\frenh\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WineTaste.1054945874.00" t="ExcludeRecursive" />
     <e p="C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste" t="IncludeRecursive">
@@ -10,16 +9,25 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controllers" t="Include">
         <e p="BaseController.cs" t="Include" />
+        <e p="CategoryController.cs" t="Include" />
         <e p="HomeController.cs" t="Include" />
         <e p="VarietalController.cs" t="Include" />
+        <e p="WineController.cs" t="Include" />
+      </e>
+      <e p="DataAccesses" t="Include">
+        <e p="CategoryDataAccess.cs" t="Include" />
+        <e p="VarietalDataAccess.cs" t="Include" />
+        <e p="WineDataAccess.cs" t="Include" />
       </e>
       <e p="Entities" t="Include">
         <e p="Category.cs" t="Include" />
         <e p="Varietal.cs" t="Include" />
+        <e p="Wine.cs" t="Include" />
       </e>
       <e p="Models" t="Include">
         <e p="ICategoryRepository.cs" t="Include" />
-        <e p="MockCategoryRepository.cs" t="Include" />
+        <e p="IVarietalRepository.cs" t="Include" />
+        <e p="IWineRepository.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive">
         <e p="Debug" t="Include">
@@ -30,6 +38,11 @@
         </e>
       </e>
       <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include">
+        <e p="Wine" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+        </e>
+      </e>
       <e p="Program.cs" t="Include" />
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
@@ -37,11 +50,20 @@
       <e p="Startup.cs" t="Include" />
       <e p="ViewModels" t="Include">
         <e p="BaseViewModel.cs" t="Include" />
+        <e p="CategoryDetailViewModel.cs" t="Include" />
         <e p="HomeViewModel.cs" t="Include" />
-        <e p="VarietalViewModel.cs" t="Include" />
+        <e p="VarietalDetailViewModel.cs" t="Include" />
+        <e p="ViewObjects" t="Include">
+          <e p="CategoryWithVarietalList.cs" t="Include" />
+          <e p="VarietalWithWineList.cs" t="Include" />
+        </e>
+        <e p="WineDetailViewModel.cs" t="Include" />
       </e>
       <e p="Views" t="Include">
         <e p="_ViewStart.cshtml" t="Include" />
+        <e p="Category" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+        </e>
         <e p="Home" t="Include">
           <e p="Index.cshtml" t="Include" />
           <e p="Index.cshtml.cs" t="Include" />
@@ -50,7 +72,7 @@
           <e p="_Layout.cshtml" t="Include" />
         </e>
         <e p="Varietal" t="Include">
-          <e p="Index.cshtml" t="Include" />
+          <e p="Detail.cshtml" t="Include" />
         </e>
       </e>
       <e p="WineTaste.csproj" t="IncludeRecursive" />

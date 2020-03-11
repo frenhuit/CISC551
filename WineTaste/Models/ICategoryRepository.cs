@@ -9,8 +9,10 @@ namespace WineTaste.Models
 {
     public interface ICategoryRepository
     {
-        IEnumerable<Category> GetCategories();
+        List<Category> GetCategories();
 
         Category GetCategoryById(int id);
+
+        List<Varietal> GetVarietalsOfCategory(int categoryId);
     }
 }

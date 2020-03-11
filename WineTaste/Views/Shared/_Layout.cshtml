@@ -40,19 +40,17 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Link</a>
           </li>
-          @foreach (var category in Model.Categories)
+          @foreach (var categoryWithVarietal in Model.AllCategoriesWithVarietalsList)
           {
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                @category.CategoryName
+                @categoryWithVarietal.Category.CategoryName
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                @foreach (var varietal in category.VarietalList)
+                @foreach (var varietal in categoryWithVarietal.VarietalList)
                 {
-                  <a class="dropdown-item" asp-controller = "Varietal" asp-action = "Index" asp-route-id = "@varietal.VarietalId">@varietal.VarietalName</a>
+                  <a class="dropdown-item" asp-controller = "Varietal" asp-action = "Detail" asp-route-id = "@varietal.VarietalId">@varietal.VarietalName</a>
                 }
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" asp-controller = "Category" asp-action = "Index" asp-route-id = "@category.CategoryId">All @category.CategoryName</a>
               </div>
             </li>
           }

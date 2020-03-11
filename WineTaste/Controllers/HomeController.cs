@@ -18,7 +18,7 @@ namespace WineTaste.Controllers
         {
             HomeViewModel viewModel = new HomeViewModel()
             {
-                Categories = baseViewModel.Categories
+                AllCategoriesWithVarietalsList = baseViewModel.AllCategoriesWithVarietalsList
             };
             return View(viewModel);
         }

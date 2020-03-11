@@ -1,7 +1,8 @@
-using System.Linq;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using WineTaste.Models;
 using WineTaste.ViewModels;
+using WineTaste.ViewModels.ViewObjects;
 
 namespace WineTaste.Controllers
 {
@@ -9,14 +10,27 @@ namespace WineTaste.Controllers
     {
         protected readonly ICategoryRepository categoryRepository;
 
-        protected BaseViewModel baseViewModel;
+        protected readonly BaseViewModel baseViewModel;
 
         public BaseController(ICategoryRepository categoryRepository)
         {
+            var result = new List<CategoryWithVarietalList>();
             this.categoryRepository = categoryRepository;
-            this.baseViewModel =new BaseViewModel()
+            var categories = categoryRepository.GetCategories();
+            foreach (var category in categories)
             {
-                Categories = categoryRepository.GetCategories().ToList()
+                var varietalList =
+                    categoryRepository.GetVarietalsOfCategory(category.CategoryId);
+                result.Add(new CategoryWithVarietalList
+                {
+                    Category = category,
+                    VarietalList = varietalList
+                });
+            }
+            
+            baseViewModel =new BaseViewModel()
+            {
+                AllCategoriesWithVarietalsList = result
             };
         }
     }
