@@ -1,36 +1,23 @@
-using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using WineTaste.Models;
+using WineTaste.Business;
 using WineTaste.ViewModels;
-using WineTaste.ViewModels.ViewObjects;
 
 namespace WineTaste.Controllers
 {
-    public class BaseController: Controller
+    public class BaseController : Controller
     {
-        protected readonly ICategoryRepository categoryRepository;
-
         protected readonly BaseViewModel baseViewModel;
+        protected readonly CategoryBusiness categoryBusiness;
 
-        public BaseController(ICategoryRepository categoryRepository)
+        public BaseController(CategoryBusiness categoryBusiness)
         {
-            var result = new List<CategoryWithVarietalList>();
-            this.categoryRepository = categoryRepository;
-            var categories = categoryRepository.GetCategories();
-            foreach (var category in categories)
+            this.categoryBusiness = categoryBusiness;
+            var allCategoriesWithVarietalsList =
+                this.categoryBusiness.GetAllCategoriesWithVarietalsList();
+
+            baseViewModel = new BaseViewModel
             {
-                var varietalList =
-                    categoryRepository.GetVarietalsOfCategory(category.CategoryId);
-                result.Add(new CategoryWithVarietalList
-                {
-                    Category = category,
-                    VarietalList = varietalList
-                });
-            }
-            
-            baseViewModel =new BaseViewModel()
-            {
-                AllCategoriesWithVarietalsList = result
+                AllCategoriesWithVarietalsList = allCategoriesWithVarietalsList
             };
         }
     }

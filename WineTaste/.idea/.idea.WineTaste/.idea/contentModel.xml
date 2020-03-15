@@ -7,6 +7,11 @@
       <e p="appsettings.Development.json" t="Include" />
       <e p="appsettings.json" t="Include" />
       <e p="bin" t="ExcludeRecursive" />
+      <e p="Business" t="Include">
+        <e p="CategoryBusiness.cs" t="Include" />
+        <e p="VarietalBusiness.cs" t="Include" />
+        <e p="WineBusiness.cs" t="Include" />
+      </e>
       <e p="Controllers" t="Include">
         <e p="BaseController.cs" t="Include" />
         <e p="CategoryController.cs" t="Include" />

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WineTaste.Business;
 using WineTaste.Models;
 using WineTaste.ViewModels;
 using WineTaste.ViewModels.ViewObjects;
@@ -7,7 +8,7 @@ namespace WineTaste.Controllers
 {
     public class CategoryController: BaseController
     {
-        public CategoryController(ICategoryRepository categoryRepository) : base(categoryRepository)
+        public CategoryController(CategoryBusiness categoryBusiness) : base(categoryBusiness)
         {
         }
 
@@ -18,13 +19,7 @@ namespace WineTaste.Controllers
         
         public IActionResult Detail(int id)
         {
-            var category = categoryRepository.GetCategoryById(id);
-            var varietalList = categoryRepository.GetVarietalsOfCategory(id);
-            var singleCategoryWithVarietalList = new CategoryWithVarietalList
-            {
-                Category = category,
-                VarietalList = varietalList
-            };
+            var singleCategoryWithVarietalList = categoryBusiness.GetCategoryWithVarietalListById(id);
             var viewModel = new CategoryDetailViewModel
             {
                 AllCategoriesWithVarietalsList = baseViewModel.AllCategoriesWithVarietalsList,

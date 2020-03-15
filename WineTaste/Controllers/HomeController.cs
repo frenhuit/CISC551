@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using WineTaste.Business;
 using WineTaste.Models;
 using WineTaste.ViewModels;
 
@@ -10,7 +11,7 @@ namespace WineTaste.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(ICategoryRepository categoryRepository) : base(categoryRepository)
+        public HomeController(CategoryBusiness categoryBusiness) : base(categoryBusiness)
         {
         }
 

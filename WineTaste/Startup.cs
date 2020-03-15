@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using WineTaste.Models;
+using WineTaste.Business;
 using WineTaste.Models.ModelsImpl;
 
 namespace WineTaste
@@ -23,9 +23,17 @@ namespace WineTaste
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
-            services.Add(new ServiceDescriptor(typeof(ICategoryRepository),
-                new CategoryDataAccess(
-                    Configuration.GetConnectionString("DefaultConnection"))));
+            services.Add(new ServiceDescriptor(typeof(CategoryBusiness),
+                new CategoryBusiness(
+                    new CategoryDataAccess(
+                        Configuration.GetConnectionString("DefaultConnection")))));
+            services.Add(new ServiceDescriptor(typeof(VarietalBusiness),
+                new VarietalBusiness(
+                    new VarietalDataAccess(
+                        Configuration.GetConnectionString("DefaultConnection")))));
+            services.Add(new ServiceDescriptor(typeof(WineBusiness),
+                new WineBusiness(
+                    new WineDataAccess(Configuration.GetConnectionString("DefaultConnection")))));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

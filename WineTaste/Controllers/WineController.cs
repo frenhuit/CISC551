@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using WineTaste.Business;
 using WineTaste.Models;
 using WineTaste.ViewModels;
 
@@ -6,12 +7,12 @@ namespace WineTaste.Controllers
 {
     public class WineController : BaseController
     {
-        private readonly IWineRepository _wineRepository;
+        private readonly WineBusiness _wineBusiness;
 
-        public WineController(ICategoryRepository categoryRepository,
-            IWineRepository wineRepository) : base(categoryRepository)
+        public WineController(CategoryBusiness categoryBusiness,
+            WineBusiness wineBusiness) : base(categoryBusiness)
         {
-            _wineRepository = wineRepository;
+            _wineBusiness = wineBusiness;
         }
         
         public IActionResult Index()
@@ -21,7 +22,7 @@ namespace WineTaste.Controllers
 
         public IActionResult Detail(int id)
         {
-            var wine = _wineRepository.GetWineById(id);
+            var wine = _wineBusiness.GetWineById(id);
             var viewModel = new WineDetailViewModel
             {
                 AllCategoriesWithVarietalsList = baseViewModel.AllCategoriesWithVarietalsList,
