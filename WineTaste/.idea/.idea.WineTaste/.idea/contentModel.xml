@@ -52,6 +52,11 @@
       <e p="Properties" t="Include">
         <e p="launchSettings.json" t="Include" />
       </e>
+      <e p="Service" t="Include">
+        <e p="ICategoryService.cs" t="Include" />
+        <e p="IVarietalService.cs" t="Include" />
+        <e p="IWineService.cs" t="Include" />
+      </e>
       <e p="Startup.cs" t="Include" />
       <e p="ViewModels" t="Include">
         <e p="BaseViewModel.cs" t="Include" />

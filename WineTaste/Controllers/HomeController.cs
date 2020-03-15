@@ -5,13 +5,14 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WineTaste.Business;
 using WineTaste.Models;
+using WineTaste.Service;
 using WineTaste.ViewModels;
 
 namespace WineTaste.Controllers
 {
     public class HomeController : BaseController
     {
-        public HomeController(CategoryBusiness categoryBusiness) : base(categoryBusiness)
+        public HomeController(ICategoryService categoryService) : base(categoryService)
         {
         }
 

@@ -1,9 +1,10 @@
 using WineTaste.Entities;
 using WineTaste.Models;
+using WineTaste.Service;
 
 namespace WineTaste.Business
 {
-    public class WineBusiness
+    public class WineBusiness : IWineService
     {
         private readonly IWineRepository _wineRepository;
 

@@ -1,10 +1,11 @@
 using System.Collections.Generic;
 using WineTaste.Models;
+using WineTaste.Service;
 using WineTaste.ViewModels.ViewObjects;
 
 namespace WineTaste.Business
 {
-    public class CategoryBusiness
+    public class CategoryBusiness : ICategoryService
     {
         private readonly ICategoryRepository _categoryRepository;
 

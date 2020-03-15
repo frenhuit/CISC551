@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\frenh\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\frenh\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_WineTaste.1054945874.00" t="ExcludeRecursive" />
+    <e p="C:\Users\frenh\Dropbox\VisualStudioApplications\CISC551\WineTaste" t="IncludeRecursive">
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Business" t="Include">
+        <e p="CategoryBusiness.cs" t="Include" />
+        <e p="VarietalBusiness.cs" t="Include" />
+        <e p="WineBusiness.cs" t="Include" />
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="BaseController.cs" t="Include" />
+        <e p="CategoryController.cs" t="Include" />
+        <e p="HomeController.cs" t="Include" />
+        <e p="VarietalController.cs" t="Include" />
+        <e p="WineController.cs" t="Include" />
+      </e>
+      <e p="DataAccesses" t="Include">
+        <e p="CategoryDataAccess.cs" t="Include" />
+        <e p="VarietalDataAccess.cs" t="Include" />
+        <e p="WineDataAccess.cs" t="Include" />
+      </e>
+      <e p="Entities" t="Include">
+        <e p="Category.cs" t="Include" />
+        <e p="Varietal.cs" t="Include" />
+        <e p="Wine.cs" t="Include" />
+      </e>
+      <e p="Models" t="Include">
+        <e p="ICategoryRepository.cs" t="Include" />
+        <e p="IVarietalRepository.cs" t="Include" />
+        <e p="IWineRepository.cs" t="Include" />
+      </e>
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp3.1" t="Include">
+            <e p="WineTaste.AssemblyInfo.cs" t="Include" />
+            <e p="WineTaste.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Pages" t="Include">
+        <e p="Wine" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+        </e>
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="Startup.cs" t="Include" />
+      <e p="ViewModels" t="Include">
+        <e p="BaseViewModel.cs" t="Include" />
+        <e p="CategoryDetailViewModel.cs" t="Include" />
+        <e p="HomeViewModel.cs" t="Include" />
+        <e p="VarietalDetailViewModel.cs" t="Include" />
+        <e p="ViewObjects" t="Include">
+          <e p="CategoryWithVarietalList.cs" t="Include" />
+          <e p="VarietalWithWineList.cs" t="Include" />
+        </e>
+        <e p="WineDetailViewModel.cs" t="Include" />
+      </e>
+      <e p="Views" t="Include">
+        <e p="_ViewStart.cshtml" t="Include" />
+        <e p="Category" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+        </e>
+        <e p="Home" t="Include">
+          <e p="Index.cshtml" t="Include" />
+          <e p="Index.cshtml.cs" t="Include" />
+        </e>
+        <e p="Shared" t="Include">
+          <e p="_Layout.cshtml" t="Include" />
+        </e>
+        <e p="Varietal" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+        </e>
+      </e>
+      <e p="WineTaste.csproj" t="IncludeRecursive" />
+      <e p="WineTaste.sln" t="IncludeFlat" />
+      <e p="wwwroot" t="Include">
+        <e p="css" t="Include" />
+        <e p="image" t="Include">
+          <e p="112580h.jpg" t="Include" />
+          <e p="191124_Tile4A.jpg" t="Include" />
+          <e p="aqtji6meozrrxnsgwhls.jpg" t="Include" />
+          <e p="home_header.jpg" t="Include" />
+          <e p="iStock_000007165584Small.jpg" t="Include" />
+          <e p="lnsupadjgudeg6l6u8ef.jpg" t="Include" />
+          <e p="rjnqcoe4uvz2mgqe2vtu.jpg" t="Include" />
+          <e p="Tile5.jpg" t="Include" />
+          <e p="Varietal_Cabernet_Sauvignon.jpg" t="Include" />
+          <e p="znzhqgu4wioeec2l3j9e.jpg" t="Include" />
+        </e>
+        <e p="lib" t="Include" />
+      </e>
+    </e>
+  </component>
+</project>

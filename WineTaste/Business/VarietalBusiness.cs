@@ -1,9 +1,10 @@
 using WineTaste.Models;
+using WineTaste.Service;
 using WineTaste.ViewModels.ViewObjects;
 
 namespace WineTaste.Business
 {
-    public class VarietalBusiness
+    public class VarietalBusiness : IVarietalService
     {
         private readonly IVarietalRepository _varietalRepository;
 

@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using WineTaste.Business;
+using WineTaste.Service;
 using WineTaste.ViewModels;
 
 namespace WineTaste.Controllers
@@ -7,13 +8,13 @@ namespace WineTaste.Controllers
     public class BaseController : Controller
     {
         protected readonly BaseViewModel baseViewModel;
-        protected readonly CategoryBusiness categoryBusiness;
+        protected readonly ICategoryService categoryService;
 
-        public BaseController(CategoryBusiness categoryBusiness)
+        public BaseController(ICategoryService categoryService)
         {
-            this.categoryBusiness = categoryBusiness;
+            this.categoryService = categoryService;
             var allCategoriesWithVarietalsList =
-                this.categoryBusiness.GetAllCategoriesWithVarietalsList();
+                this.categoryService.GetAllCategoriesWithVarietalsList();
 
             baseViewModel = new BaseViewModel
             {
