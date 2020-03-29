@@ -1,0 +1,5 @@
+C:\Baba\HBU\HBU_CLASS_FINAL_MATERIAL\TestMVCApplication\Models\bin\Release\Models.dll
+C:\Baba\HBU\HBU_CLASS_FINAL_MATERIAL\TestMVCApplication\Models\bin\Release\Models.pdb
+C:\Baba\HBU\HBU_CLASS_FINAL_MATERIAL\TestMVCApplication\Models\obj\Release\Models.csprojResolveAssemblyReference.cache
+C:\Baba\HBU\HBU_CLASS_FINAL_MATERIAL\TestMVCApplication\Models\obj\Release\Models.dll
+C:\Baba\HBU\HBU_CLASS_FINAL_MATERIAL\TestMVCApplication\Models\obj\Release\Models.pdb

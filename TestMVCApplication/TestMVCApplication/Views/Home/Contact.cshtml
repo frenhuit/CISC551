@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<address>
+    One Microsoft Road<br />
+    Redmond, WA 98052-6399<br />
+    <abbr title="Phone">P:</abbr>
+    425.555.0100
+</address>
+
+<address>
+    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1>What Can JavaScript Do?</h1>
+
+    <p id="demo">JavaScript can change HTML content.</p>
+
+    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Hello Students!'">
+        Click Me!
+    </button>
+
+</body>
+</html>
+
+<html>
+<body>
+
+    <p>This example calls a function which performs a calculation, and returns the result:</p>
+
+    <p id="demo1">Multiply 6 and 3</p>
+
+    <script>
+        function myFunction(a, b) {
+            return a * b;
+        }
+    </script>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML = myFunction(6, 3)">
+        Click Me!
+    </button>
+</body>
+
+
+</html>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Row</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Points</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="active">
+            <td>1</td>
+            <td>George</td>
+            <td>Hagi</td>
+            <td>100</td>
+        </tr>
+        <tr class="success">
+            <td>2</td>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>70</td>
+        </tr>
+        <tr class="info">
+            <td>3</td>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>20</td>
+        </tr>
+        <tr class="warning">
+            <td>4</td>
+            <td>Adam</td>
+            <td>Johnson</td>
+            <td>15</td>
+        </tr>
+        <tr class="danger">
+            <td>5</td>
+            <td>Maria</td>
+            <td>Anders</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+</table>
