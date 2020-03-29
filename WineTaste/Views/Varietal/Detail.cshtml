@@ -3,7 +3,7 @@
 
 <div class="container">
     <div class="card">
-        <img class="card-img-top" src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(Model.SingleVarietalWithWineList.Varietal.VarietalName.Replace(" ", "_")).jpg" alt="Card image cap">
+        <img style="max-width:100%; max-height: 500px" class="card-img-top" src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(Model.SingleVarietalWithWineList.Varietal.VarietalName.Replace(" ", "_")).jpg" alt="Card image cap">
         <div class="card-body">
             <h5 class="card-title border-bottom pb-3">
                 @Model.SingleVarietalWithWineList.Varietal.VarietalName<a href="#" class="float-right btn btn-sm btn-info d-inline-flex share">
@@ -21,7 +21,7 @@
                 <a asp-controller="Wine" asp-action="Detail" asp-route-id="@wine.WineId">@wine.WineName</a>
                 <div class="image-parent">
                     <a asp-controller="Wine" asp-action="Detail" asp-route-id="@wine.WineId">
-                        <img src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(wine.WineName.Replace(" ", "_")).jpg" class="img-fluid" alt="quixote">
+                        <img style="max-width:100%; max-height: 300px" src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(wine.WineName.Replace(" ", "_")).jpg" class="img-fluid" alt="quixote">
                     </a>
                 </div>
             </li>
