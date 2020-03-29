@@ -84,6 +84,10 @@
         <e p="Varietal" t="Include">
           <e p="Detail.cshtml" t="Include" />
         </e>
+        <e p="Wine" t="Include">
+          <e p="Detail.cshtml" t="Include" />
+          <e p="Detail.cshtml.cs" t="Include" />
+        </e>
       </e>
       <e p="WineTaste.csproj" t="IncludeRecursive" />
       <e p="WineTaste.sln" t="IncludeFlat" />
@@ -92,13 +96,63 @@
         <e p="image" t="Include">
           <e p="112580h.jpg" t="Include" />
           <e p="191124_Tile4A.jpg" t="Include" />
+          <e p="Antinori Badia a Passignano Chianti Classico Gran Selezione 2015.jpg" t="Include" />
           <e p="aqtji6meozrrxnsgwhls.jpg" t="Include" />
+          <e p="Bibi Graetz Testamatta 2015.jpg" t="Include" />
+          <e p="bordeaux blends.jpg" t="Include" />
+          <e p="Borne of Fire Cabernet Sauvignon 2017.jpg" t="Include" />
+          <e p="Cabernet_Sauvignon.jpg" t="Include" />
+          <e p="Chardonnay.jpg" t="Include" />
+          <e p="Chateau Cos d'Estournel 2016.jpg" t="Include" />
+          <e p="DAOU Vineyards Sauvignon Blanc 2018.jpg" t="Include" />
+          <e p="Domaine Drouhin Oregon Pinot Noir 2016.jpg" t="Include" />
+          <e p="Domaine Jean Grivot Nuits-St-Georges Aux Boudots Premier Cru 2015.jpg" t="Include" />
+          <e p="Dr. Loosen Wehlener Sonnenuhr Kabinett 2018.jpg" t="Include" />
+          <e p="Gaja Alteni di Brassica Sauvignon Blanc 2016.jpg" t="Include" />
+          <e p="Goldeneye Anderson Valley Pinot Noir 2016.jpg" t="Include" />
+          <e p="Haras de Pirque Hussonet Gran Reserva Cabernet Sauvignon 2015.jpg" t="Include" />
+          <e p="Harlan Estate 2014.jpg" t="Include" />
+          <e p="Heinz Eifel Riesling Kabinett 2018.jpg" t="Include" />
+          <e p="Home-HERO-03-25.jpg" t="Include" />
           <e p="home_header.jpg" t="Include" />
+          <e p="Intrinsic Red Blend 2017.jpg" t="Include" />
           <e p="iStock_000007165584Small.jpg" t="Include" />
+          <e p="Jordan Cabernet Sauvignon 2015.jpg" t="Include" />
+          <e p="La Fiera Pinot Grigio 2018.jpg" t="Include" />
+          <e p="Lail Georgia Sauvignon Blanc 2017.jpg" t="Include" />
+          <e p="Livio Felluga Pinot Grigio 2017.jpg" t="Include" />
           <e p="lnsupadjgudeg6l6u8ef.jpg" t="Include" />
+          <e p="Olivier Leflaive Puligny-Montrachet 2017.jpg" t="Include" />
+          <e p="Patient Cottat Sancerre Anciennes Vignes 2018.jpg" t="Include" />
+          <e p="Patz &amp; Hall Dutton Ranch Chardonnay 2016.jpg" t="Include" />
+          <e p="Peter Zemmer Giatl Pinot Grigio Riserva 2016.jpg" t="Include" />
+          <e p="Pierre-Yves Colin-Morey Corton-Charlemagne Grand Cru 2017.jpg" t="Include" />
+          <e p="Pinot Gris.jpg" t="Include" />
+          <e p="Pinot Noir.jpg" t="Include" />
+          <e p="Raeburn Chardonnay 2018.jpg" t="Include" />
+          <e p="Red Wine.jpg" t="Include" />
+          <e p="Red_wine.jpg" t="Include" />
+          <e p="Riesling.jpg" t="Include" />
           <e p="rjnqcoe4uvz2mgqe2vtu.jpg" t="Include" />
+          <e p="Rudi Pichler Smaragd Achleiten Riesling 2017.jpg" t="Include" />
+          <e p="Sangiovese.jpg" t="Include" />
+          <e p="Sauvignon Blanc.jpg" t="Include" />
+          <e p="Schiopetto Pinot Grigio 2017.jpg" t="Include" />
+          <e p="Screaming Eagle Cabernet Sauvignon 2014.jpg" t="Include" />
+          <e p="Tenuta Guado al Tasso (1.5 Liter Magnum in Wood Gift Box) 2015.jpg" t="Include" />
+          <e p="Tile4.jpg" t="Include" />
+          <e p="Tile4b.jpg" t="Include" />
+          <e p="Tile5 (1).jpg" t="Include" />
           <e p="Tile5.jpg" t="Include" />
+          <e p="Tile6.jpg" t="Include" />
+          <e p="Valdicava Madonna del Piano Brunello di Montalcino Riserva 2010.jpg" t="Include" />
           <e p="Varietal_Cabernet_Sauvignon.jpg" t="Include" />
+          <e p="Viticcio Chianti Classico Riserva 2015.jpg" t="Include" />
+          <e p="Von Winning Ungeheuer Riesling Grosses Gewachs 2017.jpg" t="Include" />
+          <e p="Wayfarer Wayfarer Vineyard Pinot Noir 2016.jpg" t="Include" />
+          <e p="White Wine.jpg" t="Include" />
+          <e p="white_wine.jpg" t="Include" />
+          <e p="Wineries1.jpg" t="Include" />
           <e p="znzhqgu4wioeec2l3j9e.jpg" t="Include" />
         </e>
         <e p="lib" t="Include" />

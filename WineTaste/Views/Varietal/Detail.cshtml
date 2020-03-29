@@ -1,18 +1,30 @@
-@* @model WineTaste.ViewModels.VarietalDetailViewModel *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model WineTaste.ViewModels.VarietalDetailViewModel
 
-@* @{ *@
-@*     Layout = null; *@
-@* } *@
-@* *@
-@* <!DOCTYPE html> *@
-@* *@
-@* <html> *@
-@* <head> *@
-@*     <title>title</title> *@
-@* </head> *@
-@* <body> *@
-@* <div> *@
-@*        *@
-@* </div> *@
-@* </body> *@
-@* </html> *@
+<div class="container">
+    <div class="card">
+        <img class="card-img-top" src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(Model.SingleVarietalWithWineList.Varietal.VarietalName.Replace(" ", "_")).jpg" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title border-bottom pb-3">
+                @Model.SingleVarietalWithWineList.Varietal.VarietalName<a href="#" class="float-right btn btn-sm btn-info d-inline-flex share">
+                    <i class="fas fa-share-alt"></i>
+                </a>
+            </h5>
+            <p class="card-text">@Model.SingleVarietalWithWineList.Varietal.VarietalDescription</p>
+            <a href="#" class="btn btn-sm btn-info float-right">Read more <i class="fas fa-angle-double-right"></i></a>
+        </div>
+    </div>
+    <ul class="list-group">
+        @foreach (var wine in Model.SingleVarietalWithWineList.WineList)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a asp-controller="Wine" asp-action="Detail" asp-route-id="@wine.WineId">@wine.WineName</a>
+                <div class="image-parent">
+                    <a asp-controller="Wine" asp-action="Detail" asp-route-id="@wine.WineId">
+                        <img src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(wine.WineName.Replace(" ", "_")).jpg" class="img-fluid" alt="quixote">
+                    </a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>

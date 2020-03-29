@@ -27,7 +27,7 @@ namespace WineTaste.Models.ModelsImpl
             while (reader.Read())
             {
                 var wineId = Convert.ToInt32(reader["wine_id"]);
-                var categoryId = Convert.ToInt32(reader["category_id"]);
+                var varietalId = Convert.ToInt32(reader["varietal_id"]);
                 var wineName = reader["wine_name"].ToString();
                 var wineRegion = reader["wine_region"].ToString();
                 var winePrice = Convert.ToDouble(reader["wine_price"]);
@@ -39,7 +39,7 @@ namespace WineTaste.Models.ModelsImpl
                 var wine = new Wine
                 {
                     WineId = wineId,
-                    CategoryId = categoryId,
+                    VarietalId = varietalId,
                     WineName = wineName,
                     WineRegion = wineRegion,
                     WinePrice = winePrice,
@@ -65,7 +65,7 @@ namespace WineTaste.Models.ModelsImpl
             using var reader = command.ExecuteReader();
             if (!reader.Read()) return null;
             var wineId = Convert.ToInt32(reader["wine_id"]);
-            var categoryId = Convert.ToInt32(reader["category_id"]);
+            var varietalId = Convert.ToInt32(reader["varietal_id"]);
             var wineName = reader["wine_name"].ToString();
             var wineRegion = reader["wine_region"].ToString();
             var winePrice = Convert.ToDouble(reader["wine_price"]);
@@ -77,7 +77,7 @@ namespace WineTaste.Models.ModelsImpl
             var wine = new Wine
             {
                 WineId = wineId,
-                CategoryId = categoryId,
+                VarietalId = varietalId,
                 WineName = wineName,
                 WineRegion = wineRegion,
                 WinePrice = winePrice,

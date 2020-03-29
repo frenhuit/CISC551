@@ -1,8 +1,35 @@
-@* @model WineTaste.ViewModels.CategoryDetailViewModel *@
-
-@* @{ *@
-@*     ViewBag.Title = "title"; *@
-@*     Layout = "_Layout"; *@
-@* } *@
-@* *@
-@* <h2>title</h2> *@
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model WineTaste.ViewModels.CategoryDetailViewModel
+<style>
+    body{
+      padding: 2rem 0rem;
+    }
+    .image-parent {
+      max-width: 40px;
+    }
+</style>
+<div class="container">
+    <img src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(Model.SingleCategoryWithVarietalList.Category.CategoryName.Replace(" ", "+")).jpg" class="img-fluid"/>
+    <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 font-italic">@Model.SingleCategoryWithVarietalList.Category.CategoryName</h1>
+            <p class="lead my-3">@Model.SingleCategoryWithVarietalList.Category.CategoryDescription</p>
+            <p class="lead mb-0">
+                <a href="#" class="text-white font-weight-bold">Check our @Model.SingleCategoryWithVarietalList.Category.CategoryName Inventories</a>
+            </p>
+        </div>
+    </div>
+    <ul class="list-group">
+        @foreach (var varietal in Model.SingleCategoryWithVarietalList.VarietalList)
+        {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <a asp-controller="Varietal" asp-action="Detail" asp-route-id="@varietal.VarietalId">@varietal.VarietalName</a>
+                <div class="image-parent">
+                    <a asp-controller="Varietal" asp-action="Detail" asp-route-id="@varietal.VarietalId">
+                        <img src="https://frenhuit-s3-1.s3.us-east-2.amazonaws.com/@(Model.SingleCategoryWithVarietalList.Category.CategoryName.Replace(" ", "_"))_to_varietal.jpg" class="img-fluid" alt="quixote">
+                    </a>
+                </div>
+            </li>
+        }
+    </ul>
+</div>
